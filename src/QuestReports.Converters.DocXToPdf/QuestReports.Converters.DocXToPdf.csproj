@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
+    <PackageReference Include="OpenXmlPowerTools-NetStandard" Version="4.4.21" />
+    <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="2.8.2" />
+    <PackageReference Include="QuestPDF" Version="2022.9.1" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.0" />
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+    </AssemblyAttribute>
+  </ItemGroup> 
+
+</Project>

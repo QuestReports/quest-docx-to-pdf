@@ -101,7 +101,7 @@ public static class OXmlElementsExtensions
         => cell.ChildElements.OfType<Table>().Any();
 
     public static bool ContainsPageBreak(this Paragraph paragraph)
-        => paragraph.Descendants<Break>().Any(x => x.Type.Value == BreakValues.Page);
+        => paragraph.Descendants<Break>().Any(x => x.Type?.Value == BreakValues.Page);
 
     public static IEnumerable<HeaderPart> GetHeadersParts(this WordprocessingDocument document)
         => document.MainDocumentPart.HeaderParts;

@@ -41,7 +41,7 @@ public class ParagraphHelper
 
     public void ResolveBreak(TextDescriptor descriptor, Break @break)
     {
-        switch (@break.Type.Value)
+        switch (@break.Type?.Value)
         {
             case BreakValues.Column:
                 descriptor.EmptyLine();
